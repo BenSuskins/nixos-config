@@ -2,25 +2,27 @@ _:
 
 [
   # Development Tools
-  "homebrew/cask/docker"
+  "iterm2"
   "visual-studio-code"
+  "intellij-idea-ce"
+  "postman"
 
   # Communication Tools
   "discord"
   "notion"
   "slack"
-  "telegram"
-  "zoom"
 
   # Utility Tools
-  "syncthing"
+  "maccy"
 
   # Entertainment Tools
   "vlc"
+  "spotify"
+  "plex"
 
   # Productivity Tools
-  "raycast"
-
+  "chatgpt"
+  
   # Browsers
   "google-chrome"
 ]
