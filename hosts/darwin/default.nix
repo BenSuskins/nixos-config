@@ -33,7 +33,6 @@ let user = "bensuskins"; in
   system.checks.verifyNixPath = false;
 
   environment.systemPackages = with pkgs; [
-    emacs-unstable
   ] ++ (import ../../modules/shared/packages.nix { inherit pkgs; });
 
   system = {
