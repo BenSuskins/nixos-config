@@ -85,16 +85,16 @@ let name = "Ben Suskins";
       rebase.autoStash = true;
     };
      aliases = {
-      st = "status"
-      di = "diff"
-      co = "checkout"
-      ci = "commit"
-      br = "branch"
-      sta = "stash"
-      ds = "diff"
-      unstage = "reset"
-      rum = "rebase master@{u}"
-      lg = "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+      st = "status";
+      di = "diff";
+      co = "checkout";
+      ci = "commit";
+      br = "branch";
+      sta = "stash";
+      ds = "diff";
+      unstage = "reset";
+      rum = "rebase master@{u}";
+      lg = "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit";
     }
   };
 }
