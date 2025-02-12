@@ -9,7 +9,6 @@ _:
 
   # Communication Tools
   "discord"
-  "notion"
   "slack"
 
   # Utility Tools

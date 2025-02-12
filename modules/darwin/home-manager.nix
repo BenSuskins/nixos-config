@@ -55,16 +55,15 @@ in
 
   # Fully declarative dock using the latest from Nix Store
   local.dock.enable = true;
-  local.dock.entries = [ # Todo fix this
-    { path = "/Applications/Slack.app/"; }
+  local.dock.entries = [
+    { path = "/Applications/Slack.app"; }
+    { path = "/System/Applications/Launchpad.app"; }
     { path = "/System/Applications/Messages.app/"; }
-    { path = "/System/Applications/Facetime.app/"; }
-    { path = "${pkgs.alacritty}/Applications/Alacritty.app/"; }
-    { path = "/System/Applications/Music.app/"; }
-    { path = "/System/Applications/News.app/"; }
-    { path = "/System/Applications/Photos.app/"; }
-    { path = "/System/Applications/Photo Booth.app/"; }
-    { path = "/System/Applications/TV.app/"; }
-    { path = "/System/Applications/Home.app/"; }
+    { path = "/System/Applications/Calendar.app/"; }
+    { path = "/Applications/Iterm.app"; }
+    { path = "/Applications/Safari.app"; }
+    { path = "/System/Applications/Notes.app/"; }
+    { path = "/Applications/Sporify.app"; }
+    { path = "/System/Applications/iPhone Mirroring.app/"; }
   ];
 }
