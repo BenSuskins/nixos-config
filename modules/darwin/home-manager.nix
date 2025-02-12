@@ -55,7 +55,7 @@ in
 
   # Fully declarative dock using the latest from Nix Store
   local.dock.enable = true;
-  local.dock.entries = [
+  local.dock.entries = [ # Todo fix this
     { path = "/Applications/Slack.app/"; }
     { path = "/System/Applications/Messages.app/"; }
     { path = "/System/Applications/Facetime.app/"; }

@@ -39,7 +39,7 @@ let user = "bensuskins"; in
   system = {
     stateVersion = 4;
 
-    defaults = {
+    defaults = { # Todo fix this
       NSGlobalDomain = {
         AppleShowAllExtensions = true;
         ApplePressAndHoldEnabled = false;
