@@ -46,9 +46,8 @@ let name = "Ben Suskins";
     initExtraFirst = ''
       # General
       alias run='~/scripts/run.sh'
-      alias zshconfig="code ~/.zshrc"
-      alias nixconfig="code ~/workspace/BenSuskins/dotfiles"
-      alias rebuild="cd ~/workspace/BenSuskins/dotfiles && make rebuild"
+      alias nixconfig="code ~/workspace/nixos-config"
+      alias rebuild="cd ~/workspace/BenSuskins/dotfiles && nix run .#build-switch"
 
       # SSH
       alias sshmedia='ssh -i ~/.ssh/homelab mediaserver@$MEDIA_SERVER_IP'
