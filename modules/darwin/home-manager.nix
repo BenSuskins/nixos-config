@@ -56,10 +56,11 @@ in
   # Fully declarative dock using the latest from Nix Store
   local.dock.enable = true;
   local.dock.entries = [
-    { path = "/Applications/Slack.app"; }
     { path = "/System/Applications/Launchpad.app"; }
+    { path = "/Applications/Slack.app"; }
     { path = "/System/Applications/Messages.app/"; }
     { path = "/System/Applications/Calendar.app/"; }
+    { path = "/System/Applications/Mail.app/"; }
     { path = "/Applications/Iterm.app"; }
     { path = "/Applications/Safari.app"; }
     { path = "/System/Applications/Notes.app/"; }
