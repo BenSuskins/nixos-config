@@ -63,7 +63,7 @@ in
     { path = "/Applications/Iterm.app"; }
     { path = "/Applications/Safari.app"; }
     { path = "/System/Applications/Notes.app/"; }
-    { path = "/Applications/Sporify.app"; }
+    { path = "/Applications/Spotify.app"; }
     { path = "/System/Applications/iPhone Mirroring.app/"; }
   ];
 }
