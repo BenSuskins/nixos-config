@@ -6,6 +6,7 @@ with pkgs; [
   gh
   neovim
   killall
+  jdk
 
   # Ansible
   ansible
