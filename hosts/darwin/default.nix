@@ -8,8 +8,6 @@ let user = "bensuskins"; in
     ../../modules/shared
   ];
 
-  services.nix-daemon.enable = true;
-
   nix = {
     package = pkgs.nix;
     enable = false;
