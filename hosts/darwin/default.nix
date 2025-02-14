@@ -8,18 +8,10 @@ let user = "bensuskins"; in
     ../../modules/shared
   ];
 
+
   nix = {
     package = pkgs.nix;
     enable = false;
-    settings = {
-      trusted-users = [ "@admin" "${user}" ];
-      substituters = [ "https://nix-community.cachix.org" "https://cache.nixos.org" ];
-      trusted-public-keys = [ "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY=" ];
-    };
-    
-    extraOptions = ''
-      experimental-features = nix-command flakes
-    '';
   };
 
   system.checks.verifyNixPath = false;
