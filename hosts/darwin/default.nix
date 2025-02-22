@@ -28,6 +28,7 @@ let user = "bensuskins"; in
     defaults = {
       NSGlobalDomain = {
         "com.apple.keyboard.fnState" = false;
+        "com.apple.mouse.tapBehavior" = 1;
       };
 
       dock = {
