@@ -21,6 +21,7 @@ _:
 
   # Productivity Tools
   "chatgpt"
+  "google-drive"
   
   # Browsers
   "google-chrome"
