@@ -25,4 +25,5 @@ _:
   
   # Browsers
   "google-chrome"
+  "arc"
 ]
