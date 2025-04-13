@@ -5,7 +5,7 @@ let user = "bensuskins"; in
 {
   imports = [
     ../../modules/darwin/home-manager.nix
-    ../../modules/shared/fonts.nix  # Explicitly import fonts.nix
+    ../../modules/shared/fonts.nix
     ../../modules/shared
   ];
 
