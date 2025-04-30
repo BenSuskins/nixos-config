@@ -12,6 +12,10 @@ with pkgs; [
   ansible
   ansible-lint
 
+  # Node
+  nodePackages.npm
+  nodejs
+
   # Go
   go
 ]
