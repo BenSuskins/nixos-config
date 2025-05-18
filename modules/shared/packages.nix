@@ -7,6 +7,7 @@ with pkgs; [
   neovim
   killall
   jdk
+  docker
 
   # Ansible
   ansible
