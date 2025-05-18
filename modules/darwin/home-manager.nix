@@ -67,4 +67,5 @@ in
     { path = "/Applications/Spotify.app"; }
     { path = "/System/Applications/iPhone Mirroring.app/"; }
   ];
+  local.dock.username = "bensuskins";
 }
