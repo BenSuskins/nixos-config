@@ -16,6 +16,8 @@ let user = "bensuskins"; in
   };
 
   system.checks.verifyNixPath = false;
+  
+  system.primaryUser = user;
 
   environment.systemPackages = with pkgs; [
   ] ++ (import ../../modules/shared/packages.nix { inherit pkgs; });
