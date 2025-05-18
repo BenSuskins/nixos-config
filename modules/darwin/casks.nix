@@ -6,6 +6,7 @@ _:
   "visual-studio-code"
   "intellij-idea-ce"
   "postman"
+  "docker"
 
   # Communication Tools
   "discord"
