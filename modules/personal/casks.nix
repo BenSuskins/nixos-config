@@ -1,23 +1,17 @@
 _:
 
-[
+let shared-casks = import ../shared/casks.nix; in
+shared-casks ++ [
   # Development Tools
-  "iterm2"
-  "visual-studio-code"
   "intellij-idea-ce"
   "postman"
   "docker"
 
   # Communication Tools
   "discord"
-  "slack"
-
-  # Utility Tools
-  "maccy"
 
   # Entertainment Tools
   "vlc"
-  "spotify"
   "plex"
 
   # Productivity Tools
@@ -25,6 +19,5 @@ _:
   "google-drive"
   
   # Browsers
-  "google-chrome"
   "arc"
 ]
