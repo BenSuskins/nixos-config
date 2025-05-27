@@ -62,7 +62,7 @@
                 autoMigrate = true;
               };
             }
-            ./hosts/darwin
+            ./hosts/personal
           ];
         }
       );
