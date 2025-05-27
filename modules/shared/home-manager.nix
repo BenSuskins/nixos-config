@@ -45,9 +45,9 @@ let name = "Ben Suskins";
 
     initExtraFirst = ''
       # General
-      alias run='~/scripts/run.sh'
       alias nixconfig="code ~/workspace/nixos-config"
-      alias rebuild="cd ~/workspace/BenSuskins/dotfiles && nix run .#build-switch"
+      alias rebuild="cd ~/workspace/BenSuskins/dotfiles && sudo darwin-rebuild build --flake .#aarch64-darwin"
+      alias switch="cd ~/workspace/BenSuskins/dotfiles && sudo darwin-rebuild switch --flake .#aarch64-darwin"
 
       # SSH
       alias sshmedia='ssh -i ~/.ssh/homelab mediaserver@$MEDIA_SERVER_IP'
