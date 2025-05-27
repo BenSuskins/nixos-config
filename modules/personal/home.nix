@@ -21,7 +21,7 @@ in
   homebrew = {
     enable = true;
     casks = pkgs.callPackage ./casks.nix {};
-    # onActivation.cleanup = "uninstall";
+    onActivation.cleanup = "zap";
     masApps = {
       "WhatsApp Messenger" = 310633997;
     };
@@ -79,6 +79,7 @@ in
             alias nixconfig="code ~/workspace/nixos-config"
             alias rebuild="cd ~/workspace/nixos-config && darwin-rebuild build --flake .#personal"
             alias switch="cd ~/workspace/nixos-config && sudo darwin-rebuild switch --flake .#personal"
+            alias compare="cd ~/workspace/BenSuskins/nixos-config && nix store diff-closures /run/current-system ./result"
 
             # SSH
             alias sshmedia='ssh -i ~/.ssh/homelab mediaserver@$MEDIA_SERVER_IP'

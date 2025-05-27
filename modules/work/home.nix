@@ -78,6 +78,7 @@ in
             alias nixconfig="code ~/workspace/nixos-config"
             alias rebuild="cd ~/workspace/BenSuskins/nixos-config && darwin-rebuild build --flake .#work"
             alias switch="cd ~/workspace/BenSuskins/nixos-config && sudo darwin-rebuild switch --flake .#work"
+            alias compare="cd ~/workspace/BenSuskins/nixos-config && nix store diff-closures /run/current-system ./result"
           '';
         };
         git = {
