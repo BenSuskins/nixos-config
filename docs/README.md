@@ -8,18 +8,18 @@ nix flake update
 
 ## Personal Mac
 ```shell
-darwin-rebuild switch --flake .#aarch64-darwin
+sudo darwin-rebuild switch --flake .#aarch64-darwin
 
-darwin-rebuild build --flake .#aarch64-darwin
+sudo darwin-rebuild build --flake .#aarch64-darwin
 
-darwin-rebuild rollback
+sudo darwin-rebuild rollback
 ```
 
 ## Work Mac
 ```shell
-darwin-rebuild switch --flake .#TODO
+sudo darwin-rebuild switch --flake .#TODO
 
-darwin-rebuild build --flake .#TODO
+sudo darwin-rebuild build --flake .#TODO
 
-darwin-rebuild rollback
+sudo darwin-rebuild rollback
 ```
