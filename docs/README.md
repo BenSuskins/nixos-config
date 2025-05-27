@@ -1,14 +1,25 @@
 # Nix Config
 Based On [dustinlyons/nixos-config](https://github.com/dustinlyons/nixos-config).
 
+## General
 ```shell
-darwin-rebuild switch --flake .#personal-mac
-# OR
-darwin-rebuild switch --flake .#work-mac
+nix flake update
+```
 
-darwin-rebuild build --flake .#personal-mac
+## Personal Mac
+```shell
+darwin-rebuild switch --flake .#aarch64-darwin
+
+darwin-rebuild build --flake .#aarch64-darwin
 
 darwin-rebuild rollback
+```
 
-nix flake update
+## Work Mac
+```shell
+darwin-rebuild switch --flake .#TODO
+
+darwin-rebuild build --flake .#TODO
+
+darwin-rebuild rollback
 ```
