@@ -76,8 +76,8 @@ in
           initExtraFirst = ''
             # General
             alias nixconfig="code ~/workspace/nixos-config"
-            alias rebuild="cd ~/workspace/BenSuskins/dotfiles && sudo darwin-rebuild build --flake .#aarch64-darwin"
-            alias switch="cd ~/workspace/BenSuskins/dotfiles && sudo darwin-rebuild switch --flake .#aarch64-darwin"
+            alias rebuild="cd ~/workspace/BenSuskins/nixos-config && darwin-rebuild build --flake .#work"
+            alias switch="cd ~/workspace/BenSuskins/nixos-config && sudo darwin-rebuild switch --flake .#work"
           '';
         };
         git = {

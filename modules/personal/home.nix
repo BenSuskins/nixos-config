@@ -77,8 +77,8 @@ in
           initExtraFirst = ''
             # General
             alias nixconfig="code ~/workspace/nixos-config"
-            alias rebuild="cd ~/workspace/BenSuskins/dotfiles && sudo darwin-rebuild build --flake .#aarch64-darwin"
-            alias switch="cd ~/workspace/BenSuskins/dotfiles && sudo darwin-rebuild switch --flake .#aarch64-darwin"
+            alias rebuild="cd ~/workspace/nixos-config && darwin-rebuild build --flake .#personal"
+            alias switch="cd ~/workspace/nixos-config && sudo darwin-rebuild switch --flake .#personal"
 
             # SSH
             alias sshmedia='ssh -i ~/.ssh/homelab mediaserver@$MEDIA_SERVER_IP'

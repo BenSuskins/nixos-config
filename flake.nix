@@ -28,7 +28,7 @@
   outputs = { self, darwin, nix-homebrew, homebrew-bundle, homebrew-core, homebrew-cask, home-manager, nixpkgs }:
     let
       user = "bensuskins";
-      darwinSystems = [ "aarch64-darwin" "x86_64-darwin" ];
+      darwinSystems = [ "aarch64-darwin" ];
       forAllDarwinSystems = f: nixpkgs.lib.genAttrs darwinSystems f;
       devShell = system: let pkgs = nixpkgs.legacyPackages.${system}; in {
         default = with pkgs; mkShell {
@@ -42,9 +42,9 @@
     {
       devShells = forAllDarwinSystems devShell;
 
-      darwinConfigurations = forAllDarwinSystems (system:
-        darwin.lib.darwinSystem {
-          inherit system;
+      darwinConfigurations = {
+        personal = darwin.lib.darwinSystem {
+          system = "aarch64-darwin";
           specialArgs = { inherit self; };
           modules = [
             home-manager.darwinModules.home-manager
@@ -64,7 +64,29 @@
             }
             ./hosts/personal
           ];
-        }
-      );
+        };
+        work = darwin.lib.darwinSystem {
+          system = "aarch64-darwin";
+          specialArgs = { inherit self; };
+          modules = [
+            home-manager.darwinModules.home-manager
+            nix-homebrew.darwinModules.nix-homebrew
+            {
+              nix-homebrew = {
+                inherit user;
+                enable = true;
+                taps = {
+                  "homebrew/homebrew-core" = homebrew-core;
+                  "homebrew/homebrew-cask" = homebrew-cask;
+                  "homebrew/homebrew-bundle" = homebrew-bundle;
+                };
+                mutableTaps = false;
+                autoMigrate = true;
+              };
+            }
+            ./hosts/work
+          ];
+        };
+      };
     };
 }
