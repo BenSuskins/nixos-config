@@ -21,7 +21,7 @@ in
   homebrew = {
     enable = true;
     casks = pkgs.callPackage ./casks.nix {};
-    # onActivation.cleanup = "uninstall";
+    onActivation.cleanup = "zap";
     masApps = {
     };
   };
