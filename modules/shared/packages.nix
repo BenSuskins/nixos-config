@@ -4,6 +4,7 @@ with pkgs; [
   # General
   wget
   neovim
+  dockutil
 
   # Ansible
   ansible
