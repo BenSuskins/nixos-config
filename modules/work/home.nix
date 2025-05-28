@@ -10,7 +10,6 @@ in
    ./dock
   ];
 
-  # It me
   users.users.${user} = {
     name = "${user}";
     home = "/Users/${user}";
@@ -26,7 +25,6 @@ in
     };
   };
 
-  # Enable home-manager
   home-manager = {
     useGlobalPkgs = true;
     users.${user} = { pkgs, config, lib, ... }:{
@@ -123,7 +121,6 @@ in
     };
   };
 
-  # Fully declarative dock using the latest from Nix Store
   local.dock.enable = true;
   local.dock.entries = [
     { path = "/System/Applications/Launchpad.app"; }

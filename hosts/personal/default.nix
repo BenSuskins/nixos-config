@@ -5,7 +5,6 @@ let user = "bensuskins"; in
 {
   imports = [
     ../../modules/personal/home.nix
-    ../../modules/shared/fonts.nix
     ../../modules/shared
   ];
 

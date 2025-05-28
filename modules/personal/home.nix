@@ -9,8 +9,7 @@ in
   imports = [
    ./dock
   ];
-
-  # It me
+  
   users.users.${user} = {
     name = "${user}";
     home = "/Users/${user}";
@@ -27,7 +26,6 @@ in
     };
   };
 
-  # Enable home-manager
   home-manager = {
     useGlobalPkgs = true;
     users.${user} = { pkgs, config, lib, ... }:{
@@ -81,13 +79,6 @@ in
             alias switch="cd ~/workspace/nixos-config && sudo darwin-rebuild switch --flake .#personal"
             alias compare="cd ~/workspace/nixos-config && nix store diff-closures /run/current-system ./result"
 
-            # SSH
-            alias sshmedia='ssh -i ~/.ssh/homelab mediaserver@$MEDIA_SERVER_IP'
-            alias sshdocker='ssh -i ~/.ssh/homelab docker@$DOCKER_SERVER_IP'
-            alias sshgame='ssh -i ~/.ssh/homelab gameserver@$GAME_SERVER_IP'
-            alias sshmonitor='ssh -i ~/.ssh/homelab monitor@$MONITOR_SERVER_IP'
-            alias sshdevelopment='ssh -i ~/.ssh/homelab development@$DEVELOPMENT_SERVER_IP'
-
             # IP's
             export NAS_SERVER_IP=192.168.0.100
             export MEDIA_SERVER_IP=192.168.0.101
@@ -95,6 +86,13 @@ in
             export GAME_SERVER_IP=192.168.0.103
             export MONITOR_SERVER_IP=192.168.0.104
             export DEVELOPMENT_SERVER_IP=192.168.0.105
+
+            # SSH
+            alias sshmedia='ssh -i ~/.ssh/homelab mediaserver@$MEDIA_SERVER_IP'
+            alias sshdocker='ssh -i ~/.ssh/homelab docker@$DOCKER_SERVER_IP'
+            alias sshgame='ssh -i ~/.ssh/homelab gameserver@$GAME_SERVER_IP'
+            alias sshmonitor='ssh -i ~/.ssh/homelab monitor@$MONITOR_SERVER_IP'
+            alias sshdevelopment='ssh -i ~/.ssh/homelab development@$DEVELOPMENT_SERVER_IP'
           '';
         };
         git = {
@@ -139,7 +137,6 @@ in
     };
   };
 
-  # Fully declarative dock using the latest from Nix Store
   local.dock.enable = true;
   local.dock.entries = [
     { path = "/System/Applications/Launchpad.app"; }
