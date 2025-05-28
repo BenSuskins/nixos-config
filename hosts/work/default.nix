@@ -5,10 +5,9 @@ let user = "bsuskins"; in
 {
   imports = [
     ../../modules/work/home.nix
-    ../../modules/shared/fonts.nix
     ../../modules/shared
+    ../../modules/shared/fonts.nix
   ];
-
 
   nix = {
     package = pkgs.nix;

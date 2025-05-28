@@ -9,7 +9,7 @@ in
   imports = [
    ./dock
   ];
-  
+
   users.users.${user} = {
     name = "${user}";
     home = "/Users/${user}";
@@ -72,7 +72,7 @@ in
               };
             }
           ];
-          initExtraFirst = ''
+          initContent = lib.mkBefore ''
             # General
             alias nixconfig="code ~/workspace/nixos-config"
             alias rebuild="cd ~/workspace/nixos-config && darwin-rebuild build --flake .#personal"

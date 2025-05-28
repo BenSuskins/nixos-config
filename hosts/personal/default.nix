@@ -6,8 +6,8 @@ let user = "bensuskins"; in
   imports = [
     ../../modules/personal/home.nix
     ../../modules/shared
+    ../../modules/shared/fonts.nix
   ];
-
 
   nix = {
     package = pkgs.nix;

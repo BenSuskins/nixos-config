@@ -71,7 +71,7 @@ in
               };
             }
           ];
-          initExtraFirst = ''
+          initContent = lib.mkBefore ''
             # General
             alias nixconfig="code ~/workspace/nixos-config"
             alias rebuild="cd ~/workspace/BenSuskins/nixos-config && darwin-rebuild build --flake .#work"
