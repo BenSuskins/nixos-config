@@ -27,66 +27,43 @@
 
   outputs = { self, darwin, nix-homebrew, homebrew-bundle, homebrew-core, homebrew-cask, home-manager, nixpkgs }:
     let
-      user = "bensuskins";
-      darwinSystems = [ "aarch64-darwin" ];
-      forAllDarwinSystems = f: nixpkgs.lib.genAttrs darwinSystems f;
-      devShell = system: let pkgs = nixpkgs.legacyPackages.${system}; in {
-        default = with pkgs; mkShell {
-          nativeBuildInputs = [ bashInteractive git ];
-          shellHook = ''
-            export EDITOR="code -w"
-          '';
-        };
+      users = {
+        personal = "bensuskins";
+        work = "bsuskins";
+      };
+      system = "aarch64-darwin";
+      hosts = [ "personal" "work" ];
+      mkDarwinConfig = host: darwin.lib.darwinSystem {
+        inherit system;
+        specialArgs = { inherit self; };
+        modules = [
+          home-manager.darwinModules.home-manager
+          nix-homebrew.darwinModules.nix-homebrew
+          {
+            nix-homebrew = {
+              user = users.${host};
+              enable = true;
+              taps = {
+                "homebrew/homebrew-core" = homebrew-core;
+                "homebrew/homebrew-cask" = homebrew-cask;
+                "homebrew/homebrew-bundle" = homebrew-bundle;
+              };
+              mutableTaps = false;
+              autoMigrate = true;
+            };
+          }
+          ./hosts/${host}
+        ];
       };
     in
     {
-      devShells = forAllDarwinSystems devShell;
-
-      darwinConfigurations = {
-        personal = darwin.lib.darwinSystem {
-          system = "aarch64-darwin";
-          specialArgs = { inherit self; };
-          modules = [
-            home-manager.darwinModules.home-manager
-            nix-homebrew.darwinModules.nix-homebrew
-            {
-              nix-homebrew = {
-                inherit user;
-                enable = true;
-                taps = {
-                  "homebrew/homebrew-core" = homebrew-core;
-                  "homebrew/homebrew-cask" = homebrew-cask;
-                  "homebrew/homebrew-bundle" = homebrew-bundle;
-                };
-                mutableTaps = false;
-                autoMigrate = true;
-              };
-            }
-            ./hosts/personal
-          ];
-        };
-        work = darwin.lib.darwinSystem {
-          system = "aarch64-darwin";
-          specialArgs = { inherit self; };
-          modules = [
-            home-manager.darwinModules.home-manager
-            nix-homebrew.darwinModules.nix-homebrew
-            {
-              nix-homebrew = {
-                inherit user;
-                enable = true;
-                taps = {
-                  "homebrew/homebrew-core" = homebrew-core;
-                  "homebrew/homebrew-cask" = homebrew-cask;
-                  "homebrew/homebrew-bundle" = homebrew-bundle;
-                };
-                mutableTaps = false;
-                autoMigrate = true;
-              };
-            }
-            ./hosts/work
-          ];
-        };
+      devShells.${system}.default = with nixpkgs.legacyPackages.${system}; mkShell {
+        nativeBuildInputs = [ bashInteractive git ];
+        shellHook = ''
+          export EDITOR="code -w"
+        '';
       };
+
+      darwinConfigurations = nixpkgs.lib.genAttrs hosts (host: mkDarwinConfig host);
     };
 }
