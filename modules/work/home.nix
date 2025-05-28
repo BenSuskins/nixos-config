@@ -97,6 +97,11 @@ in
             };
             pull.rebase = true;
             rebase.autoStash = true;
+            push.default = "simple";
+            fetch.prune = true;
+            merge.ff = "only";
+            color.ui = "auto";
+            pull.ff = "only";
           };
           aliases = {
             st = "status";
