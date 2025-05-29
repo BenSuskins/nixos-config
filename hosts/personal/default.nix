@@ -4,11 +4,10 @@ let user = "bensuskins"; in
 
 {
   imports = [
-    ../../modules/darwin/home-manager.nix
-    ../../modules/shared/fonts.nix
+    ../../modules/personal/home.nix
     ../../modules/shared
+    ../../modules/shared/fonts.nix
   ];
-
 
   nix = {
     package = pkgs.nix;

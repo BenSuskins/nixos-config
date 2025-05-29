@@ -4,21 +4,8 @@ with pkgs; [
   # General
   wget
   neovim
-
-  # Ansible
-  ansible
-  ansible-lint
+  dockutil
 
   # Github
   gh
-
-  # Java 
-  jdk
-
-  # Node
-  nodePackages.npm
-  nodejs
-
-  # Go
-  go
 ]
