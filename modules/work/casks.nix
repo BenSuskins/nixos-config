@@ -5,4 +5,16 @@ shared-casks ++ [
   # Development Tools
   "intellij-idea"
   "podman"
+  "podman-desktop"
+  "hoppscotch"
+  "mongodb-compass"
+
+  # Pairing
+  "pop"
+  "tuple"
+
+  # Communication
+  "miro"
+  "ankerwork"
+  "logi-options+"
 ]
