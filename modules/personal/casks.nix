@@ -6,6 +6,7 @@ shared-casks ++ [
   "intellij-idea-ce"
   "postman"
   "docker"
+  "commander-one"
 
   # Communication Tools
   "discord"

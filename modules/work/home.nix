@@ -124,11 +124,15 @@ in
   local.dock.enable = true;
   local.dock.entries = [
     { path = "/System/Applications/Launchpad.app"; }
-    { path = "/Applications/Slack.app"; }
-    { path = "/System/Applications/Calendar.app/"; }
+    { path = "/System/Applications/Notes.app"; }
+    { path = "/Applications/Miro.app"; }
     { path = "/Applications/Iterm.app"; }
-    { path = "/Applications/Safari.app"; }
-    { path = "/System/Applications/Notes.app/"; }
+    { path = "/Applications/IntelliJ IDEA.app"; }
+    { path = "/Applications/Visual Studio Code.app"; }
+    { path = "/Applications/Microsoft Edge.app"; }
+    { path = "/Applications/Slack.app"; }
+    { path = "/Applications/Microsoft Teams.app"; }
+    { path = "/System/Applications/Reminders.app/"; }
   ];
   local.dock.username = user;
 }
