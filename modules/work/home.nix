@@ -50,9 +50,6 @@ in
           zsh = import ../shared/zsh.nix;
           git = import ../shared/git.nix { inherit name email; };
         };
-        # Marked broken Oct 20, 2022 check later to remove this
-        # https://github.com/nix-community/home-manager/issues/3344
-        manual.manpages.enable = false;
       };
   };
 
