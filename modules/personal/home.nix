@@ -48,33 +48,7 @@ in
           stateVersion = "23.11";
         };
         programs = {
-          zsh = {
-            enable = true;
-            autocd = false;
-            plugins = import ../../modules/shared/zsh.nix;
-            initContent = lib.mkBefore ''
-              # General
-              alias nixconfig="code ~/workspace/nixos-config"
-              alias rebuild="cd ~/workspace/nixos-config && darwin-rebuild build --flake .#personal"
-              alias switch="cd ~/workspace/nixos-config && sudo darwin-rebuild switch --flake .#personal"
-              alias compare="cd ~/workspace/nixos-config && nix store diff-closures /run/current-system ./result"
-
-              # IP's
-              export NAS_SERVER_IP=192.168.0.100
-              export MEDIA_SERVER_IP=192.168.0.101
-              export DOCKER_SERVER_IP=192.168.0.102
-              export GAME_SERVER_IP=192.168.0.103
-              export MONITOR_SERVER_IP=192.168.0.104
-              export DEVELOPMENT_SERVER_IP=192.168.0.105
-
-              # SSH
-              alias sshmedia='ssh -i ~/.ssh/homelab mediaserver@$MEDIA_SERVER_IP'
-              alias sshdocker='ssh -i ~/.ssh/homelab docker@$DOCKER_SERVER_IP'
-              alias sshgame='ssh -i ~/.ssh/homelab gameserver@$GAME_SERVER_IP'
-              alias sshmonitor='ssh -i ~/.ssh/homelab monitor@$MONITOR_SERVER_IP'
-              alias sshdevelopment='ssh -i ~/.ssh/homelab development@$DEVELOPMENT_SERVER_IP'
-            '';
-          };
+          zsh = import ../shared/zsh.nix { inherit lib; };
           git = {
             enable = true;
             ignores = [ "*.swp" ];

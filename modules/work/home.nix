@@ -47,18 +47,7 @@ in
           stateVersion = "23.11";
         };
         programs = {
-          zsh = {
-            enable = true;
-            autocd = false;
-            plugins = import ../../modules/shared/zsh.nix;
-            initContent = lib.mkBefore ''
-              # General
-              alias nixconfig="code ~/workspace/nixos-config"
-              alias rebuild="cd ~/workspace/BenSuskins/nixos-config && darwin-rebuild build --flake .#work"
-              alias switch="cd ~/workspace/BenSuskins/nixos-config && sudo darwin-rebuild switch --flake .#work"
-              alias compare="cd ~/workspace/BenSuskins/nixos-config && nix store diff-closures /run/current-system ./result"
-            '';
-          };
+          zsh = import ../shared/zsh.nix { inherit lib; };
           git = {
             enable = true;
             ignores = [ "*.swp" ];
