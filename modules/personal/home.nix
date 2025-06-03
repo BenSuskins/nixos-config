@@ -13,7 +13,7 @@ let
 in
 {
   imports = [
-    ./dock
+    ../shared/dock
   ];
 
   users.users.${user} = {
