@@ -4,7 +4,6 @@ with pkgs;
 [
   # General
   wget
-  neovim
   dockutil
   nixfmt-rfc-style
 
