@@ -60,9 +60,7 @@
           inherit system;
           specialArgs = {
             inherit self;
-            user = userInfo.${host}.username;
-            name = userInfo.${host}.name;
-            email = userInfo.${host}.email;
+            userInfo = userInfo.${host};
             hostRole = host;
           };
           modules = [

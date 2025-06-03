@@ -3,9 +3,7 @@
   pkgs,
   lib,
   home-manager,
-  user,
-  name,
-  email,
+  userInfo,
   ...
 }:
 
@@ -14,11 +12,11 @@
     ../shared/dock
   ];
 
-  system.primaryUser = user;
+  system.primaryUser = userInfo.username;
 
-  users.users.${user} = {
-    name = "${user}";
-    home = "/Users/${user}";
+  users.users.${userInfo.username} = {
+    name = "${userInfo.username}";
+    home = "/Users/${userInfo.username}";
     isHidden = false;
     shell = pkgs.zsh;
   };
@@ -34,7 +32,7 @@
 
   home-manager = {
     useGlobalPkgs = true;
-    users.${user} =
+    users.${userInfo.username} =
       {
         pkgs,
         config,
@@ -49,7 +47,7 @@
         };
         programs = {
           zsh = import ../shared/zsh.nix;
-          git = import ../shared/git.nix { inherit name email; };
+          git = import ../shared/git.nix { inherit (userInfo) name email; };
         };
       };
   };
@@ -67,5 +65,5 @@
     { path = "/Applications/Spotify.app"; }
     { path = "/System/Applications/iPhone Mirroring.app/"; }
   ];
-  local.dock.username = user;
+  local.dock.username = userInfo.username;
 }
