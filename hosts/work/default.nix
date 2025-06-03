@@ -1,9 +1,5 @@
 { config, pkgs, ... }:
 
-let
-  user = "bsuskins";
-in
-
 {
   imports = [
     ../../modules/work/home.nix
@@ -17,7 +13,5 @@ in
     enable = false;
   };
 
-  system.checks.verifyNixPath = false;
-  system.primaryUser = user;
   security.pam.services.sudo_local.touchIdAuth = true;
 }
