@@ -1,8 +1,4 @@
 {
-  ...
-}:
-
-{
   enable = true;
   autocd = false;
   plugins = [

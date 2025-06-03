@@ -48,42 +48,8 @@ in
           stateVersion = "23.11";
         };
         programs = {
-          zsh = import ../shared/zsh.nix {  };
-          git = {
-            enable = true;
-            ignores = [ "*.swp" ];
-            userName = name;
-            userEmail = email;
-            lfs = {
-              enable = true;
-            };
-            extraConfig = {
-              init.defaultBranch = "main";
-              core = {
-                editor = "code";
-                autocrlf = "input";
-              };
-              pull.rebase = true;
-              rebase.autoStash = true;
-              push.default = "simple";
-              fetch.prune = true;
-              merge.ff = "only";
-              color.ui = "auto";
-              pull.ff = "only";
-            };
-            aliases = {
-              st = "status";
-              di = "diff";
-              co = "checkout";
-              ci = "commit";
-              br = "branch";
-              sta = "stash";
-              ds = "diff";
-              unstage = "reset";
-              rum = "rebase master@{u}";
-              lg = "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit";
-            };
-          };
+          zsh = import ../shared/zsh.nix;
+          git = import ../shared/git.nix { inherit name email; };
         };
         # Marked broken Oct 20, 2022 check later to remove this
         # https://github.com/nix-community/home-manager/issues/3344

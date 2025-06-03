@@ -6,6 +6,6 @@
     MONITOR_SERVER_IP = "192.168.0.104";
     DEVELOPMENT_SERVER_IP = "192.168.0.105";
 
-    EDITOR="code -w"
+    EDITOR="code -w";
     VISUAL = "$EDITOR";
 }
