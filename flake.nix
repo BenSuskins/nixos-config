@@ -37,17 +37,17 @@
       nixpkgs,
     }:
     let
-      users = {
-        personal = "bensuskins";
-        work = "bsuskins";
-      };
-      names = {
-        personal = "Ben Suskins";
-        work = "Ben Suskins";
-      };
-      emails = {
-        personal = "suskinsdevelopment@gmail.com";
-        work = "bsuskins@ford.com";
+      userInfo = {
+        personal = {
+          name = "Ben Suskins";
+          username = "bensuskins";
+          email = "suskinsdevelopment@gmail.com";
+        };
+        work = {
+          name = "Ben Suskins";
+          username = "bsuskins";
+          email = "bsuskins@ford.com";
+        };
       };
       system = "aarch64-darwin";
       hosts = [
@@ -60,9 +60,9 @@
           inherit system;
           specialArgs = {
             inherit self;
-            user = users.${host};
-            name = names.${host};
-            email = emails.${host};
+            user = userInfo.${host}.username;
+            name = userInfo.${host}.name;
+            email = userInfo.${host}.email;
             hostRole = host;
           };
           modules = [
@@ -70,7 +70,7 @@
             nix-homebrew.darwinModules.nix-homebrew
             {
               nix-homebrew = {
-                user = users.${host};
+                user = userInfo.${host}.username;
                 enable = true;
                 taps = {
                   "homebrew/homebrew-core" = homebrew-core;
