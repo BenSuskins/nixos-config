@@ -3,14 +3,12 @@
   pkgs,
   lib,
   home-manager,
+  user,
+  name,
+  email,
   ...
 }:
 
-let
-  user = "bsuskins";
-  name = "Ben Suskins";
-  email = "bsuskins@ford.com";
-in
 {
   imports = [
     ../shared/dock

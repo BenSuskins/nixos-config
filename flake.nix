@@ -41,6 +41,14 @@
         personal = "bensuskins";
         work = "bsuskins";
       };
+      names = {
+        personal = "Ben Suskins";
+        work = "Ben Suskins";
+      };
+      emails = {
+        personal = "suskinsdevelopment@gmail.com";
+        work = "bsuskins@ford.com";
+      };
       system = "aarch64-darwin";
       hosts = [
         "personal"
@@ -50,7 +58,13 @@
         host:
         darwin.lib.darwinSystem {
           inherit system;
-          specialArgs = { inherit self; };
+          specialArgs = {
+            inherit self;
+            user = users.${host};
+            name = names.${host};
+            email = emails.${host};
+            hostRole = host;
+          };
           modules = [
             home-manager.darwinModules.home-manager
             nix-homebrew.darwinModules.nix-homebrew
