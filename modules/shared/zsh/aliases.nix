@@ -1,8 +1,9 @@
+{ hostRole }:
 {
     # General
     nixconfig = "code ~/workspace/nixos-config";
-    rebuild = "cd ~/workspace/nixos-config && darwin-rebuild build --flake .#personal";
-    switch = "cd ~/workspace/nixos-config && sudo darwin-rebuild switch --flake .#personal";
+    rebuild = "cd ~/workspace/nixos-config && darwin-rebuild build --flake .#${hostRole}";
+    switch = "cd ~/workspace/nixos-config && sudo darwin-rebuild switch --flake .#${hostRole}";
     compare = "cd ~/workspace/nixos-config && nix store diff-closures /run/current-system ./result";
 
     # SSH

@@ -1,3 +1,4 @@
+{ hostRole }:
 {
   enable = true;
   autocd = false;
@@ -35,6 +36,6 @@
       };
     }
   ];
-  shellAliases = import ./zsh/aliases.nix;
+  shellAliases = import ./zsh/aliases.nix { inherit hostRole; };
   sessionVariables = import ./zsh/variables.nix;
 }
