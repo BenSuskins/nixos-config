@@ -84,18 +84,6 @@
         };
     in
     {
-      devShells.${system}.default =
-        with nixpkgs.legacyPackages.${system};
-        mkShell {
-          nativeBuildInputs = [
-            bashInteractive
-            git
-          ];
-          shellHook = ''
-            export EDITOR="code -w"
-          '';
-        };
-
       darwinConfigurations = nixpkgs.lib.genAttrs hosts (host: mkDarwinConfig host);
     };
 }
