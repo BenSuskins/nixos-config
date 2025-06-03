@@ -1,6 +1,8 @@
 { config, pkgs, ... }:
 
-let user = "bsuskins"; in
+let
+  user = "bsuskins";
+in
 
 {
   imports = [
@@ -16,11 +18,14 @@ let user = "bsuskins"; in
   };
 
   system.checks.verifyNixPath = false;
-  
+
   system.primaryUser = user;
 
-  environment.systemPackages = with pkgs; [
-  ] ++ (import ../../modules/shared/packages.nix { inherit pkgs; });
+  environment.systemPackages =
+    with pkgs;
+    [
+    ]
+    ++ (import ../../modules/shared/packages.nix { inherit pkgs; });
 
   security.pam.services.sudo_local.touchIdAuth = true;
 }

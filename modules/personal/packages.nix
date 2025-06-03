@@ -1,8 +1,11 @@
 { pkgs }:
 
 with pkgs;
-let shared-packages = import ../shared/packages.nix { inherit pkgs; }; in
-shared-packages ++ [
+let
+  shared-packages = import ../shared/packages.nix { inherit pkgs; };
+in
+shared-packages
+++ [
   # Ansible
   ansible
   ansible-lint
@@ -10,7 +13,7 @@ shared-packages ++ [
   # Go
   go
 
-  # Java 
+  # Java
   jdk
 
   # Node

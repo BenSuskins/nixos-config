@@ -33,3 +33,8 @@ sudo darwin-rebuild switch --flake .#TODO
 # Rollback system
 sudo darwin-rebuild rollback
 ```
+
+# Troubleshotting
+
+`Could not write domain com.apple.universalaccess; exiting`
+> Make sure you give full disk access to the terminal you're using

@@ -10,6 +10,14 @@
         "com.apple.mouse.tapBehavior" = 1;
       };
 
+      universalaccess = {
+        closeViewScrollWheelToggle = true;
+      };
+
+      menuExtraClock = {
+        Show24Hour = true;
+        ShowSeconds = true;
+      };
       dock = {
         autohide = true;
         orientation = "bottom";

@@ -11,7 +11,7 @@
 
   # Entertainment Tools
   "spotify"
-  
+
   # Browsers
   "google-chrome"
 ]
