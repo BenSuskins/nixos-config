@@ -48,7 +48,7 @@ in
           stateVersion = "23.11";
         };
         programs = {
-          zsh = import ../shared/zsh.nix { inherit lib; };
+          zsh = import ../shared/zsh.nix {  };
           git = {
             enable = true;
             ignores = [ "*.swp" ];
