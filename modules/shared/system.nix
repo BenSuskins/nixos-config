@@ -18,6 +18,7 @@
         Show24Hour = true;
         ShowSeconds = true;
       };
+
       dock = {
         autohide = true;
         orientation = "bottom";
@@ -33,6 +34,11 @@
         AppleShowAllFiles = true;
         FXPreferredViewStyle = "icnv";
         FXEnableExtensionChangeWarning = false;
+      };
+
+      controlcenter = {
+        Bluetooth = true;
+        Sound = true;
       };
 
       trackpad = {
