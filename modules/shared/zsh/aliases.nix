@@ -1,7 +1,7 @@
 { hostRole }:
 
 {
-  # General
+  # Nix
   nixconfig = "code ~/workspace/nixos-config";
   rebuild = "cd ~/workspace/nixos-config && darwin-rebuild build --flake .#${hostRole}";
   switch = "cd ~/workspace/nixos-config && sudo darwin-rebuild switch --flake .#${hostRole}";

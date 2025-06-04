@@ -1,0 +1,4 @@
+dgrep() {
+  # A recursive, case-insensitive grep that excludes binary files
+  grep -iR "$@" * | grep -v "Binary"
+}

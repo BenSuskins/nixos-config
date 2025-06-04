@@ -2,6 +2,7 @@
 {
   enable = true;
   autocd = false;
+
   plugins = [
     {
       name = "pure";
@@ -36,6 +37,12 @@
       };
     }
   ];
+
   shellAliases = import ./zsh/aliases.nix { inherit hostRole; };
+
   sessionVariables = import ./zsh/variables.nix;
+
+  initExtra = ''
+    ${builtins.readFile ./zsh/functions.sh}
+  '';
 }
