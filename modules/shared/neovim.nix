@@ -8,4 +8,8 @@
   plugins = with pkgs.vimPlugins; [
     tokyonight-nvim
   ];
+
+  extraConfig = ''
+    colorscheme tokyonight
+  '';
 }
