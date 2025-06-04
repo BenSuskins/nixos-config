@@ -41,7 +41,7 @@
       }:
       {
         home = {
-          file = import ../shared/files.nix; {inherit hostRole; };
+          file = import ../shared/files.nix {inherit hostRole; };
           sessionPath = [
             "$HOME/.local/bin"
           ];
@@ -54,6 +54,7 @@
           direnv = import ../shared/direnv.nix;
           zsh = import ../shared/zsh.nix { inherit hostRole; };
           git = import ../shared/git.nix { inherit (userInfo) name email; };
+          zoxide = import ../shared/zoxide.nix;
         };
       };
   };
