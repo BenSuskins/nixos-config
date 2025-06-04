@@ -6,7 +6,6 @@
   vimAlias = true;
 
   plugins = with pkgs.vimPlugins; [
-    # ...other plugins...
     tokyonight-nvim
   ];
 }
