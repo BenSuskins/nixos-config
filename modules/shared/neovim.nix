@@ -7,6 +7,9 @@
 
   plugins = with pkgs.vimPlugins; [
     tokyonight-nvim
+    plenary-nvim
+    telescope-nvim
+    nvim-treesitter
   ];
 
   extraConfig = ''
