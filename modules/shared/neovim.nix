@@ -17,4 +17,8 @@
   extraConfig = ''
     colorscheme tokyonight
   '';
+ 
+  extraLuaConfig = ''
+    require('mini.statusline').setup()
+  '';
 }
