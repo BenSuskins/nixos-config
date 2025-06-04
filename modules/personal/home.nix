@@ -42,6 +42,10 @@
       }:
       {
         home = {
+          file = import ../shared/files.nix { inherit hostRole; };
+          sessionPath = [
+            "$HOME/.local/bin"
+          ];
           enableNixpkgsReleaseCheck = false;
           packages = pkgs.callPackage ./packages.nix { };
           stateVersion = "23.11";
