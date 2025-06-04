@@ -41,7 +41,7 @@
       }:
       {
         home = {
-          file = import ../shared/files.nix {inherit hostRole; };
+          file = import ../shared/files.nix { inherit hostRole; };
           sessionPath = [
             "$HOME/.local/bin"
           ];
