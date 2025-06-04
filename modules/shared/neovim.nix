@@ -10,6 +10,8 @@
     plenary-nvim
     telescope-nvim
     nvim-treesitter
+    which-key-nvim
+    mini-nvim
   ];
 
   extraConfig = ''
