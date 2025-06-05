@@ -9,7 +9,8 @@ with pkgs;
   jq
   dockutil
   nixfmt-rfc-style
-
+  lazygit
+  
   # Github
   gh
 ]
