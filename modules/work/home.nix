@@ -66,5 +66,5 @@
     { path = "/Applications/Microsoft Teams.app"; }
     { path = "/System/Applications/Reminders.app/"; }
   ];
-  local.dock.username = user;
+  local.dock.username = userInfo.username;
 }

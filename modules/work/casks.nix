@@ -7,7 +7,7 @@ shared-casks
 ++ [
   # Development Tools
   "intellij-idea"
-  "podman"
+  #"podman"
   "podman-desktop"
   "hoppscotch"
   "mongodb-compass"
