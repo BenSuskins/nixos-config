@@ -19,11 +19,11 @@
     fetch.prune = true;
     merge.ff = "only";
     color.ui = "auto";
+    user.signingkey = "~/.ssh/signing_key";
+    gpg.format = "ssh";
   }
   // (if hostRole == "work" then {
-    gpg.format = "ssh";
     gpg.ssh.allowedSignersFile = "~/.ssh/allowed_signers";
-    user.signingkey = "~/.ssh/signing_key";
   } else {})
   ;
   aliases = {
