@@ -9,45 +9,23 @@
     enable = true;
   };
   extraConfig = {
-    init = {
-      defaultBranch = "main";
-    };
-    core = {
-      autocrlf = "input";
-    };
-    pull = {
-      rebase = true;
-      ff = "only";
-    };
-    rebase = {
-      autoStash = true;
-    };
-    push = {
-      default = "simple";
-      autoSetupRemote = true;
-    };
-    fetch = {
-      prune = true;
-    };
-    merge = {
-      ff = "only";
-    };
-    color = {
-      ui = "auto";
-    };
+    init.defaultBranch = "main";
+    core.autocrlf = "input";
+    pull.rebase = true;
+    pull.ff = "only";
+    rebase.autoStash = true;
+    push.default = "simple";
+    push.autoSetupRemote = true;
+    fetch.prune = true;
+    merge.ff = "only";
+    color.ui = "auto";
   }
-    // (hostRole == "work" then {
-      gpg = {
-        format = "ssh";
-        ssh = {
-          allowedSignersFile = "~/.ssh/allowed_signers";
-        };
-      };
-      user = {
-        signingkey = "~/.ssh/signing_key";
-      };
-    } else {});
-  };
+  // (if hostRole == "work" then {
+    gpg.format = "ssh";
+    gpg.ssh.allowedSignersFile = "~/.ssh/allowed_signers";
+    user.signingkey = "~/.ssh/signing_key";
+  } else {})
+  ;
   aliases = {
     st = "status";
     di = "diff";
