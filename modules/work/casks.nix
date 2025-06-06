@@ -7,10 +7,10 @@ shared-casks
 ++ [
   # Development Tools
   "intellij-idea"
-  #"podman"
   "podman-desktop"
   "hoppscotch"
   "mongodb-compass"
+  "google-cloud-sdk"
 
   # Pairing
   "pop"

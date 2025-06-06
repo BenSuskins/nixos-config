@@ -25,6 +25,9 @@
   homebrew = {
     enable = true;
     casks = pkgs.callPackage ./casks.nix { };
+    brews = [
+      "podman"
+    ];
     onActivation.cleanup = "zap";
     masApps = {
     };
