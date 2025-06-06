@@ -7,7 +7,7 @@ in
 shared-packages
 ++ [
   # Java
-  jdk
+  jdk17
 
   # Node
   nodejs_22
