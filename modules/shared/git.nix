@@ -1,4 +1,4 @@
-{ name, email }:
+{ name, email, hostRole }:
 
 {
   enable = true;
@@ -35,6 +35,18 @@
     color = {
       ui = "auto";
     };
+  }
+    // (hostRole == "work" then {
+      gpg = {
+        format = "ssh";
+        ssh = {
+          allowedSignersFile = "~/.ssh/allowed_signers";
+        };
+      };
+      user = {
+        signingkey = "~/.ssh/signing_key";
+      };
+    } else {});
   };
   aliases = {
     st = "status";
