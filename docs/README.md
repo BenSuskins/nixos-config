@@ -13,10 +13,10 @@ nix store diff-closures /run/current-system ./result
 ## Personal Mac
 ```shell
 # Build system
-sudo darwin-rebuild build --flake .#aarch64-darwin
+sudo darwin-rebuild build --flake .#personal
 
 # Deploy system
-sudo darwin-rebuild switch --flake .#aarch64-darwin
+sudo darwin-rebuild switch --flake .#personal
 
 # Rollback system
 sudo darwin-rebuild rollback
@@ -25,10 +25,10 @@ sudo darwin-rebuild rollback
 ## Work Mac
 ```shell
 # Build system
-sudo darwin-rebuild build --flake .#TODO
+sudo darwin-rebuild build --flake .#work
 
 # Deploy system
-sudo darwin-rebuild switch --flake .#TODO
+sudo darwin-rebuild switch --flake .#work
 
 # Rollback system
 sudo darwin-rebuild rollback
