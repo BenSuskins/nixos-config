@@ -25,10 +25,11 @@
   homebrew = {
     enable = true;
     casks = pkgs.callPackage ./casks.nix { };
+    onActivation.cleanup = "zap";
+    onActivation.upgrade = true;
     brews = [
       "podman"
     ];
-    onActivation.cleanup = "zap";
     masApps = {
     };
   };

@@ -26,6 +26,7 @@
     enable = true;
     casks = pkgs.callPackage ./casks.nix { };
     onActivation.cleanup = "zap";
+    onActivation.upgrade = true;
     masApps = {
       "WhatsApp Messenger" = 310633997;
     };
