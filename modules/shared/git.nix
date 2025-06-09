@@ -22,11 +22,8 @@
     user.signingkey = "~/.ssh/signing_key";
     gpg.format = "ssh";
     commit.gpgsign = true;
-  }
-  // (if hostRole == "work" then {
     gpg.ssh.allowedSignersFile = "~/.ssh/allowed_signers";
-  } else {})
-  ;
+  };
   aliases = {
     st = "status";
     di = "diff";

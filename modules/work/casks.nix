@@ -20,4 +20,7 @@ shared-casks
   "miro"
   "ankerwork"
   "logi-options+"
+
+  # Other
+  "caffeine"
 ]
