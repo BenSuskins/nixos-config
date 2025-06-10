@@ -2,7 +2,7 @@
 
 {
   enable = true;
-  ignores = [ "*.swp" ];
+  ignores = [ "*.swp" ".envrc" ];
   userName = name;
   userEmail = email;
   lfs = {
