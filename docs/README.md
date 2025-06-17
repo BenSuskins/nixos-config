@@ -1,40 +1,48 @@
-# Nix Config
+# 🧑‍💻 Nix Config
+
 Based On [dustinlyons/nixos-config](https://github.com/dustinlyons/nixos-config).
 
-## General
+## 🛠️ General
+
 ```shell
-# Update Flakes
+# 🔄 Update Flakes
 nix flake update
 
-# See difference in build
+# 🔍 See difference in build
 nix store diff-closures /run/current-system ./result
 ```
 
-## Personal Mac
+## 🏡 Personal Mac
+
 ```shell
-# Build system
+# 🏗️ Build system
 sudo darwin-rebuild build --flake .#personal
 
-# Deploy system
+# 🚀 Deploy system
 sudo darwin-rebuild switch --flake .#personal
 
-# Rollback system
+# ⏪ Rollback system
 sudo darwin-rebuild rollback
 ```
 
-## Work Mac
+## 💼 Work Mac
+
 ```shell
-# Build system
+# 🏗️ Build system
 sudo darwin-rebuild build --flake .#work
 
-# Deploy system
+# 🚀 Deploy system
 sudo darwin-rebuild switch --flake .#work
 
-# Rollback system
+# ⏪ Rollback system
 sudo darwin-rebuild rollback
 ```
 
-# Troubleshotting
+# 🛠️ Troubleshooting
 
-`Could not write domain com.apple.universalaccess; exiting`
-> Make sure you give full disk access to the terminal you're using
+`Could not write domain com.apple.universalaccess; exiting`  
+> ⚠️ Make sure you give **Full Disk Access** to the terminal
+
+# 🙏 Acknowledgments
+
+Based on [dustinlyons/nixos-config](https://github.com/dustinlyons/nixos-config). Thanks for the inspiration!
