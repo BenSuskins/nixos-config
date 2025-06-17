@@ -66,8 +66,8 @@ sudo darwin-rebuild rollback
 
 ## 🛠️ Troubleshooting
 
-`Could not write domain com.apple.universalaccess; exiting`  
-> ⚠️ Make sure you give **Full Disk Access** to the terminal you're using.
+- `Could not write domain com.apple.universalaccess; exiting`
+  > ⚠️ Make sure you give **Full Disk Access** to the terminal you're using.
 
 ---
 
