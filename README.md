@@ -7,7 +7,7 @@ My [Nix](https://nixos.org/) configuration for macOS, managed with flakes and [n
 ## 🏗️ Getting Started
 1. Clone this repository (if you haven't already):
    ```shell
-   git clone https://github.com/yourusername/nixos-config.git
+   git clone https://github.com/BenSuskins/nixos-config.git
    cd nixos-config
    ```
 1. **Install Nix and prerequisites:**  
