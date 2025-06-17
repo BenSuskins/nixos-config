@@ -4,7 +4,7 @@ My [Nix](https://nixos.org/) configuration for macOS, managed with flakes and [n
 
 ---
 
-## 💾 Getting Started
+## 🏗️ Getting Started
 1. Clone this repository (if you haven't already):
    ```shell
    git clone https://github.com/yourusername/nixos-config.git
@@ -15,12 +15,7 @@ My [Nix](https://nixos.org/) configuration for macOS, managed with flakes and [n
    ```shell
    ./bootstrap.sh
    ```
-1. **Initial run:**  
-   Run the provided bootstrap script:
-   ```shell
-   TODO
-   ```   
-1. Follow the usage instructions below.
+2. Follow the usage instructions below.
 
 ---
 
@@ -39,31 +34,34 @@ nix store diff-closures /run/current-system ./result
 ## 🏡 Personal Mac
 
 ```shell
-# 🏗️ Build system
+# 🏗️ First time setup (before darwin-rebuild is available)
+nix run nix-darwin -- switch --flake .#personal
+
+# 🔨 Build system (after initial setup)
 sudo darwin-rebuild build --flake .#personal
 
-# 🚀 Deploy system
+# 🚀 Deploy system (after initial setup)
 sudo darwin-rebuild switch --flake .#personal
 
 # ⏪ Rollback system
 sudo darwin-rebuild rollback
 ```
 
----
-
-## 🗄️ Work Mac
+## 💼 Work Mac 
 
 ```shell
-# 🏗️ Build system
+# 🏗️ First time setup (before darwin-rebuild is available)
+nix run nix-darwin -- switch --flake .#work
+
+# 🔨 Build system (after initial setup)
 sudo darwin-rebuild build --flake .#work
 
-# 🚀 Deploy system
+# 🚀 Deploy system (after initial setup)
 sudo darwin-rebuild switch --flake .#work
 
 # ⏪ Rollback system
 sudo darwin-rebuild rollback
 ```
-
 ---
 
 ## 🛠️ Troubleshooting
