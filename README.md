@@ -5,17 +5,17 @@ My [Nix](https://nixos.org/) configuration for macOS, managed with flakes and [n
 ---
 
 ## 🏗️ Getting Started
-1. Clone this repository (if you haven't already):
+1. Clone this repository:
    ```shell
    git clone https://github.com/BenSuskins/nixos-config.git
    cd nixos-config
    ```
-1. **Install Nix and prerequisites:**  
+2. **Install Nix and prerequisites:**  
    Run the provided bootstrap script:
    ```shell
    ./bootstrap.sh
    ```
-2. Follow the usage instructions below.
+3. Follow the usage instructions below.
 
 ---
 
