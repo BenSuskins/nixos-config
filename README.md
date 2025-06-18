@@ -89,3 +89,6 @@ Based on [dustinlyons/nixos-config](https://github.com/dustinlyons/nixos-config)
 
 - [Nix Manual](https://nixos.org/manual/nix/stable/)
 - [Nix Flakes](https://nixos.wiki/wiki/Flakes)
+- [Nix Pkgs Search](https://search.nixos.org/packages)
+- [Home Manager Options](https://home-manager-options.extranix.com)
+- [Nix Darwin Options](https://nix-darwin.github.io/nix-darwin/manual/)
