@@ -4,7 +4,15 @@ My [Nix](https://nixos.org/) configuration for macOS, managed with flakes and [n
 
 ---
 
-## 📦 Prerequisites
+## ✨ Features
+
+- 🚀 Automated setup of macOS devices.
+- 🔐 Separate work / personal configurations.
+
+---
+
+# 📦 Prerequisites
+
 1. Clone this repository:
    ```shell
    git clone https://github.com/BenSuskins/nixos-config.git
