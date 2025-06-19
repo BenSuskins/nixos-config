@@ -5,6 +5,7 @@
 
   # Communication Tools
   "slack"
+  "miro"
 
   # Utility Tools
   "maccy"

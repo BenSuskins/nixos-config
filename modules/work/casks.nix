@@ -17,7 +17,6 @@ shared-casks
   "tuple"
 
   # Communication
-  "miro"
   "ankerwork"
   "logi-options+"
 
