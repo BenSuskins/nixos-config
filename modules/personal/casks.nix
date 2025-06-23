@@ -13,6 +13,7 @@ shared-casks
 
   # Communication Tools
   "discord"
+  "drawio"
 
   # Entertainment Tools
   "vlc"
