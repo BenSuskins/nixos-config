@@ -10,6 +10,7 @@ shared-casks
   "postman"
   "docker"
   "commander-one"
+  "warp"
 
   # Communication Tools
   "discord"
@@ -25,4 +26,5 @@ shared-casks
 
   # Browsers
   "arc"
+  "thebrowsercompany-dia"
 ]

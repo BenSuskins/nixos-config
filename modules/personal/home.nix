@@ -58,14 +58,14 @@
   local.dock.enable = true;
   local.dock.entries = [
     { path = "/System/Applications/Launchpad.app"; }
-    { path = "/Applications/Slack.app"; }
+    { path = "/Applications/Discord.app"; }
     { path = "/System/Applications/Messages.app/"; }
-    { path = "/System/Applications/Calendar.app/"; }
     { path = "/System/Applications/Mail.app/"; }
+    { path = "/System/Applications/Calendar.app/"; }
     { path = "/Applications/Iterm.app"; }
     { path = "/Applications/Safari.app"; }
     { path = "/System/Applications/Notes.app/"; }
-    { path = "/Applications/Spotify.app"; }
+    { path = "/System/Applications/Music.app/"; }
     { path = "/System/Applications/iPhone Mirroring.app/"; }
   ];
   local.dock.username = userInfo.username;

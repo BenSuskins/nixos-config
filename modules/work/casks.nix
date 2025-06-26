@@ -19,6 +19,7 @@ shared-casks
   # Communication
   "ankerwork"
   "logi-options+"
+  "slack"
 
   # Other
   "caffeine"
