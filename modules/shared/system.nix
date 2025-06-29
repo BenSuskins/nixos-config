@@ -10,7 +10,7 @@
         "com.apple.keyboard.fnState" = false;
         "com.apple.mouse.tapBehavior" = 1;
           # 120, 90, 60, 30, 12, 6, 2
-        KeyRepeat = 120;
+        KeyRepeat = 6;
 
         # 120, 94, 68, 35, 25, 15
         InitialKeyRepeat = 15;
