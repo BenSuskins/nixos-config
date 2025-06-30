@@ -29,6 +29,7 @@
     onActivation.upgrade = true;
     brews = [
       "podman"
+      "mob"
     ];
     masApps = {
     };
