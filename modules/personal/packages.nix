@@ -18,4 +18,7 @@ shared-packages
 
   # Node
   nodejs_22
+
+  # Dev tools
+  docker
 ]

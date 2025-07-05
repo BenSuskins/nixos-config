@@ -8,7 +8,6 @@ shared-casks
   # Development Tools
   "intellij-idea-ce"
   "postman"
-  "docker"
   "commander-one"
   "warp"
 
