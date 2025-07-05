@@ -27,6 +27,9 @@
     casks = pkgs.callPackage ./casks.nix { };
     onActivation.cleanup = "zap";
     onActivation.upgrade = true;
+    brews = [
+      "podman"
+    ];
     masApps = {
       "WhatsApp Messenger" = 310633997;
     };
