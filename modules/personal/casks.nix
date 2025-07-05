@@ -10,6 +10,7 @@ shared-casks
   "postman"
   "commander-one"
   "warp"
+  "podman-desktop"
 
   # Communication Tools
   "discord"
