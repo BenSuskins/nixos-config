@@ -8,8 +8,6 @@ shared-casks
   # Development Tools
   "intellij-idea-ce"
   "postman"
-  "commander-one"
-  "warp"
   "podman-desktop"
 
   # Communication Tools
@@ -23,8 +21,4 @@ shared-casks
   # Productivity Tools
   "chatgpt"
   "google-drive"
-
-  # Browsers
-  "arc"
-  "thebrowsercompany-dia"
 ]
