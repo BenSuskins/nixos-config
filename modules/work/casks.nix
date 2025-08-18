@@ -8,9 +8,8 @@ shared-casks
   # Development Tools
   "intellij-idea"
   "podman-desktop"
-  "hoppscotch"
   "mongodb-compass"
-  "google-cloud-sdk"
+  "gcloud-cli"
 
   # Pairing
   "pop"
@@ -22,5 +21,4 @@ shared-casks
   "slack"
 
   # Other
-  "caffeine"
 ]
