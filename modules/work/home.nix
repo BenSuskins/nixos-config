@@ -25,8 +25,11 @@
   homebrew = {
     enable = true;
     casks = pkgs.callPackage ./casks.nix { };
-    onActivation.cleanup = "zap";
-    onActivation.upgrade = true;
+    onActivation = {
+      cleanup = "zap";
+      upgrade = true;
+      autoUpdate = true;
+    };
     brews = [
       "podman"
       "mob"
