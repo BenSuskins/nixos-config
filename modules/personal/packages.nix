@@ -10,6 +10,10 @@ shared-packages
   ansible
   ansible-lint
 
+  # Podman
+  podman
+  podman-compose
+
   # Go
   go
 
