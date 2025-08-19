@@ -9,8 +9,6 @@
   # Utility Tools
   "maccy"
 
-  # Entertainment Tools
-
   # Browsers
   "google-chrome"
 ]

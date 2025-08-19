@@ -28,8 +28,6 @@
     onActivation.cleanup = "zap";
     onActivation.upgrade = true;
     brews = [
-      "podman"
-      "podman-compose"
     ];
     masApps = {
       "WhatsApp Messenger" = 310633997;
