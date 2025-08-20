@@ -62,11 +62,11 @@
   local.dock.enable = true;
   local.dock.entries = [
     { path = "/System/Applications/Launchpad.app"; }
-    { path = "/Applications/Discord.app"; }
+    { path = "${pkgs.discord}/Applications/Discord.app"; }
     { path = "/System/Applications/Messages.app/"; }
     { path = "/System/Applications/Mail.app/"; }
     { path = "/System/Applications/Calendar.app/"; }
-    { path = "/Applications/Iterm.app"; }
+    { path = "${pkgs.iterm2}/Applications/iTerm2.app"; }
     { path = "/Applications/Safari.app"; }
     { path = "/System/Applications/Notes.app/"; }
     { path = "/System/Applications/Music.app/"; }
