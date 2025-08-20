@@ -8,11 +8,16 @@ with pkgs;
   fzf
   jq
   dockutil
+
+  # Nix
   nixfmt-rfc-style
-  lazygit
   
-  # Github
+  # Git
   gh
+  lazygit
+
+  # Utilities
+  maccy
 
   # Development
   vscode
