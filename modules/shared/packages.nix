@@ -21,4 +21,5 @@ with pkgs;
 
   # Development
   vscode
+  iterm2
 ]
