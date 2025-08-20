@@ -14,6 +14,12 @@ shared-packages
   podman
   podman-compose
 
+  # Communication Tools
+  discord
+  
+  # Diagramming Tools
+  drawio
+
   # Go
   go
   jetbrains.goland

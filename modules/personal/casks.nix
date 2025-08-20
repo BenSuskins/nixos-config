@@ -8,10 +8,6 @@ shared-casks
   # Development Tools
   "intellij-idea-ce"
 
-  # Communication Tools
-  "discord"
-  "drawio"
-
   # Entertainment Tools
   "vlc"
   "plex"
