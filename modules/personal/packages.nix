@@ -10,6 +10,9 @@ shared-packages
   ansible
   ansible-lint
 
+  # AI
+  chatgpt
+
   # Containers
   podman
   podman-compose
@@ -26,6 +29,7 @@ shared-packages
 
   # Java
   jdk
+  jetbrains.idea-community
 
   # Node
   nodejs_22

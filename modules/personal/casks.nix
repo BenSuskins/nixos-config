@@ -5,14 +5,10 @@ let
 in
 shared-casks
 ++ [
-  # Development Tools
-  "intellij-idea-ce"
-
   # Entertainment Tools
   "vlc"
   "plex"
 
   # Productivity Tools
-  "chatgpt"
   "google-drive"
 ]
