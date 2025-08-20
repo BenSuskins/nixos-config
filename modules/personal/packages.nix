@@ -11,7 +11,6 @@ shared-packages
   ansible-lint
 
   # AI
-  chatgpt
 
   # Containers
   podman

@@ -10,5 +10,6 @@ shared-casks
   "plex"
 
   # Productivity Tools
+  "chatgpt"
   "google-drive"
 ]
