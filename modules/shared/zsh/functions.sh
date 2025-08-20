@@ -48,3 +48,7 @@ killport() {
     echo "No process found on port $port"
   fi
 }
+
+nixRun() {
+  nix-shell -p "$1" --run "$1"
+}
