@@ -16,6 +16,7 @@ shared-packages
 
   # Go
   go
+  jetbrains.goland
 
   # Java
   jdk
