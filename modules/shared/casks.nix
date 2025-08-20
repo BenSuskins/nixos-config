@@ -1,7 +1,6 @@
 [
   # Development Tools
   "iterm2"
-  "visual-studio-code"
 
   # Communication Tools
   "miro"

@@ -13,4 +13,7 @@ with pkgs;
   
   # Github
   gh
+
+  # Development
+  vscode
 ]
