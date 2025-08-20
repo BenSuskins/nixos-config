@@ -10,12 +10,13 @@ shared-packages
   ansible
   ansible-lint
 
-  # Podman
+  # Containers
   podman
   podman-compose
 
   # Go
   go
+  jetbrains.goland
 
   # Java
   jdk

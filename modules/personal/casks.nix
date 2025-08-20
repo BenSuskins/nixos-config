@@ -7,7 +7,6 @@ shared-casks
 ++ [
   # Development Tools
   "intellij-idea-ce"
-  "goland"
 
   # Communication Tools
   "discord"
