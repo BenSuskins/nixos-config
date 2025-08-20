@@ -67,6 +67,19 @@
           };
           modules = [
             home-manager.darwinModules.home-manager
+            (
+              {
+                pkgs,
+                config,
+                inputs,
+                ...
+              }:
+              {
+                home-manager.sharedModules = [
+                  mac-app-util.homeManagerModules.default
+                ];
+              }
+            )
             nix-homebrew.darwinModules.nix-homebrew
             mac-app-util.darwinModules.default
             {
