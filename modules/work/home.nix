@@ -31,8 +31,6 @@
       autoUpdate = true;
     };
     brews = [
-      "podman"
-      "mob"
     ];
     masApps = {
     };
@@ -66,9 +64,9 @@
     { path = "/System/Applications/Launchpad.app"; }
     { path = "/System/Applications/Notes.app"; }
     { path = "/Applications/Miro.app"; }
-    { path = "/Applications/Iterm.app"; }
-    { path = "/Applications/IntelliJ IDEA.app"; }
-    { path = "/Applications/Visual Studio Code.app"; }
+    { path = "${pkgs.iterm2}/Applications/iTerm2.app"; }
+    { path = "${pkgs.jetbrains.idea-ultimate}/Applications/IntelliJ IDEA.app"; }
+    { path = "${pkgs.vscode}/Applications/Visual Studio Code.app"; }
     { path = "/Applications/Microsoft Edge.app"; }
     { path = "/Applications/Slack.app"; }
     { path = "/Applications/Microsoft Teams.app"; }

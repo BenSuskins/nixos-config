@@ -5,20 +5,11 @@ let
 in
 shared-casks
 ++ [
-  # Development Tools
-  "intellij-idea"
-  "podman-desktop"
-  "mongodb-compass"
-  "gcloud-cli"
-
-  # Pairing
-  "pop"
+  # Collaboration Tools
   "tuple"
 
   # Communication
   "ankerwork"
   "logi-options+"
   "slack"
-
-  # Other
 ]
