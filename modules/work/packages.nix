@@ -14,9 +14,6 @@ shared-packages
   # Collaboration Tools
   mob
 
-  # Development Tools
-  google-cloud-sdk
-
   # Java
   jdk17
   jetbrains.idea-ultimate
