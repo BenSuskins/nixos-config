@@ -19,6 +19,9 @@ shared-packages
   # Communication Tools
   discord
   
+  # Entertainment
+  spotify
+
   # Diagramming Tools
   drawio
 
