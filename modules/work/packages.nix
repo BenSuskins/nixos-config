@@ -15,7 +15,7 @@ shared-packages
   mob
 
   # Java
-  jdk17
+  jdk
   jetbrains.idea-ultimate
 
   # Node
