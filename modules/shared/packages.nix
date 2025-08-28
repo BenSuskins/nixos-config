@@ -8,6 +8,7 @@ with pkgs;
   fzf
   jq
   dockutil
+  eza
 
   # Nix
   nixfmt-rfc-style

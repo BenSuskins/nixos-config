@@ -52,3 +52,7 @@ killport() {
 nixRun() {
   nix-shell -p "$1" --run "$1"
 }
+
+cdr() {
+  cd $(git rev-parse --show-toplevel)
+}
