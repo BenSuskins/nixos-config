@@ -69,7 +69,7 @@
     { path = "${pkgs.iterm2}/Applications/iTerm2.app"; }
     { path = "/Applications/Safari.app"; }
     { path = "/System/Applications/Notes.app/"; }
-    { path = "${pkgs.spotify}/Applications/Spotify.app"; }
+    { path = "/Applications/Music.app"; }
     { path = "/System/Applications/iPhone Mirroring.app/"; }
   ];
   local.dock.username = userInfo.username;
