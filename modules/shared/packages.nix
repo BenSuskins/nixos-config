@@ -23,5 +23,4 @@ with pkgs;
   # Development
   vscode
   iterm2
-  ghostty
 ]
