@@ -61,7 +61,6 @@
 
   local.dock.enable = true;
   local.dock.entries = [
-    { path = "/System/Applications/Launchpad.app"; }
     { path = "/System/Applications/Notes.app"; }
     { path = "/Applications/Miro.app"; }
     { path = "${pkgs.iterm2}/Applications/iTerm2.app"; }

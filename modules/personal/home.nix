@@ -61,7 +61,6 @@
 
   local.dock.enable = true;
   local.dock.entries = [
-    { path = "/System/Applications/Launchpad.app"; }
     { path = "${pkgs.discord}/Applications/Discord.app"; }
     { path = "/System/Applications/Messages.app/"; }
     { path = "/System/Applications/Mail.app/"; }
