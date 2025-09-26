@@ -1,26 +1,25 @@
 # Appearance
-theme = "snazzy";
-window-height = 30
-window-width = 134
+theme = "snazzy"
+window-height = 27
+window-width = 118
 macos-titlebar-style = "tabs"
 
 # Font
-font-size = 13;
-font-family = "JetBrains Mono NF";
+font-size = 13
+font-family = "JetBrains Mono NF"
+
+# Behaviour
+confirm-close-surface = false
 
 # Keybindings
 # Splits
-keybind = "super+b>\=new_split:right"
-keybind = "super+b>-=new_split:down"
-keybind = "super+b>e=equalize_splits"
-keybind = "super+b>z=toggle_split_zoom"
+keybind = "super+/=new_split:right"
+keybind = "super+.=new_split:down"
+keybind = "super+e=equalize_splits"
+keybind = "super+z=toggle_split_zoom"
 
 # Split Navigation
-keybind = "super+b>h=goto_split:left"
-keybind = "super+b>j=goto_split:bottom"
-keybind = "super+b>k=goto_split:top"
-keybind = "super+b>l=goto_split:right"
-keybind = "super+b>left=goto_split:left"
-keybind = "super+b>down=goto_split:bottom"
-keybind = "super+b>up=goto_split:top"
-keybind = "super+b>right=goto_split:right"
+keybind = "super+h=goto_split:left"
+keybind = "super+j=goto_split:bottom"
+keybind = "super+k=goto_split:top"
+keybind = "super+l=goto_split:right"

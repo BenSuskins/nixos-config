@@ -65,7 +65,7 @@
     { path = "/System/Applications/Messages.app/"; }
     { path = "/System/Applications/Mail.app/"; }
     { path = "/System/Applications/Calendar.app/"; }
-    { path = "${pkgs.iterm2}/Applications/iTerm2.app"; }
+    { path = "${pkgs.ghostty-bin}/Applications/Ghostty.app"; }
     { path = "/Applications/Safari.app"; }
     { path = "/System/Applications/Notes.app/"; }
     { path = "/Applications/Music.app"; }
