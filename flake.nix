@@ -47,8 +47,8 @@
         };
         work = {
           name = "Ben Suskins";
-          username = "bsuskins";
-          email = "bsuskins@ford.com";
+          username = "tbd";
+          email = "tbd";
         };
       };
       system = "aarch64-darwin";
