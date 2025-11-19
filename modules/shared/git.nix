@@ -3,19 +3,19 @@
 {
   enable = true;
   ignores = [ "*.swp" ".envrc" ];
+  aliases = {
+    st = "status";
+    di = "diff";
+    co = "checkout";
+    ci = "commit";
+    br = "branch";
+    sta = "stash";
+    ds = "diff";
+    unstage = "reset";
+    rum = "rebase master@{u}";
+    lg = "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit";
+  };
   settings ={
-      aliases = {
-        st = "status";
-        di = "diff";
-        co = "checkout";
-        ci = "commit";
-        br = "branch";
-        sta = "stash";
-        ds = "diff";
-        unstage = "reset";
-        rum = "rebase master@{u}";
-        lg = "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit";
-      };
       user = {
         name = name;
         email = email;
