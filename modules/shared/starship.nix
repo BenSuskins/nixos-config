@@ -1,7 +1,7 @@
 {
   enable = true;
   enableZshIntegration = true;
-  settings = {
-    presets = [ "pure" ];
-  };
+  settings = builtins.fromTOML (
+    builtins.readFile ../../programs/starship/config.toml
+  );
 }

@@ -19,6 +19,7 @@ with pkgs;
 
   # Utilities
   maccy
+  obsidian
 
   # Development
   vscode
