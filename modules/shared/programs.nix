@@ -12,6 +12,10 @@
   
   neovim = import ../shared/neovim.nix { inherit pkgs; };
   direnv = import ../shared/direnv.nix;
+  starship = {
+    enable = true;
+    enableZshIntegration = true;
+  };
   zsh = import ../shared/zsh.nix { inherit hostRole; };
   git = import ../shared/git.nix {
     name = userInfo.name;

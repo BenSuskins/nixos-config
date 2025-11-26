@@ -3,8 +3,8 @@
 {
   enable = true;
   autocd = false;
-
-  plugins = import ./zsh/plugins.nix;
+  syntaxHighlighting.enable = true;
+  autosuggestion.enable = true;
   shellAliases = import ./zsh/aliases.nix { inherit hostRole; };
   sessionVariables = import ./zsh/variables.nix;
   initContent = ''
