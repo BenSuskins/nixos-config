@@ -14,9 +14,6 @@ shared-packages
   # Collaboration Tools
   mob
 
-  # Go
-  go
-
   # Java
   jdk
   jetbrains.idea-ultimate

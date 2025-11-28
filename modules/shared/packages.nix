@@ -10,6 +10,9 @@ with pkgs;
   dockutil
   eza
 
+  # Go
+  go
+
   # Nix
   nixfmt-rfc-style
   

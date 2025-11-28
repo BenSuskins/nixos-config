@@ -22,10 +22,6 @@ shared-packages
   # Diagramming Tools
   drawio
 
-  # Go
-  go
-  jetbrains.goland
-
   # Java
   jdk
   jetbrains.idea-community
