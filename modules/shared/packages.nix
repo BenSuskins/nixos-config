@@ -13,6 +13,17 @@ with pkgs;
   # Go
   go
 
+  # Java
+  jdk
+  
+  # Node
+  nodejs_22
+
+  # Containers
+  podman
+  podman-compose
+  podman-desktop
+  
   # Nix
   nixfmt-rfc-style
   

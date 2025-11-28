@@ -10,22 +10,9 @@ shared-packages
   ansible
   ansible-lint
 
-  # AI
-
-  # Containers
-  podman
-  podman-compose
-
   # Communication Tools
   discord
-  
-  # Diagramming Tools
-  drawio
 
   # Java
-  jdk
   jetbrains.idea-community
-
-  # Node
-  nodejs_22
 ]
