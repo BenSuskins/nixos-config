@@ -11,5 +11,4 @@ shared-casks
 
   # Productivity Tools
   "chatgpt"
-  "google-drive"
 ]
