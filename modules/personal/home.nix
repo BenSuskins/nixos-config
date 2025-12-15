@@ -68,6 +68,7 @@
     { path = "${pkgs.ghostty-bin}/Applications/Ghostty.app"; }
     { path = "/Applications/Safari.app"; }
     { path = "/System/Applications/Notes.app/"; }
+    { path = "${pkgs.obsidian}/Applications/Obsidian.app"; }
     { path = "/Applications/Music.app"; }
     { path = "/System/Applications/iPhone Mirroring.app/"; }
   ];
