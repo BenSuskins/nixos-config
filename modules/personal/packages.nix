@@ -15,7 +15,4 @@ shared-packages
 
   # Java
   jetbrains.idea-community
-
-  # Gaming
-  steam
 ]
