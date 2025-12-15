@@ -4,7 +4,7 @@
   imports = [
     ../../modules/personal/home.nix
     ../../modules/shared
-    ../../modules/shared/fonts.nix
+    # ../../modules/shared/fonts.nix
     ../../modules/shared/system.nix
   ];
 
