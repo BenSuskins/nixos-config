@@ -7,5 +7,5 @@ in
 shared-packages
 ++ [
   # Java
-  jetbrains.idea-ultimate
+  jetbrains.idea
 ]

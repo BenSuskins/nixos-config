@@ -14,7 +14,7 @@ shared-packages
   discord
 
   # Java
-  jetbrains.idea-community
+  jetbrains.idea
 
   # AI
   claude-code
