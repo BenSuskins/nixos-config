@@ -15,4 +15,7 @@ shared-packages
 
   # Java
   jetbrains.idea-community
+
+  # AI
+  claude-code
 ]
