@@ -17,6 +17,5 @@
   git = import ../shared/git.nix {
     name = userInfo.name;
     email = userInfo.email;
-    hostRole = hostRole;
   };
 }

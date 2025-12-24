@@ -15,6 +15,7 @@ with pkgs;
 
   # Java
   jdk
+  jetbrains.idea
   
   # Node
   nodejs_22

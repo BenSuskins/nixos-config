@@ -1,4 +1,4 @@
-{ name, email, hostRole }:
+{ name, email }:
 
 {
   enable = true;

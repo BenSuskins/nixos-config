@@ -13,9 +13,6 @@ shared-packages
   # Communication Tools
   discord
 
-  # Java
-  jetbrains.idea
-
   # AI
   claude-code
 ]

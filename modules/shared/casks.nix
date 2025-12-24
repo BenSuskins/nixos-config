@@ -1,4 +1,2 @@
 [
-  # Communication Tools
-  "miro"
 ]

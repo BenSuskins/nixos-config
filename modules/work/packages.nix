@@ -6,6 +6,4 @@ let
 in
 shared-packages
 ++ [
-  # Java
-  jetbrains.idea
 ]
