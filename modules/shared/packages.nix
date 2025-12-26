@@ -19,6 +19,7 @@ with pkgs;
   
   # Node
   nodejs_22
+  bun
 
   # Containers
   podman
