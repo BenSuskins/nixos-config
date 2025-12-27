@@ -22,6 +22,7 @@
       };
       init.defaultBranch = "main";
       core.autocrlf = "input";
+      core.excludesfile = "~/.gitignore_global";
       pull.rebase = true;
       pull.ff = "only";
       rebase.autoStash = true;
