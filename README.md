@@ -1,94 +1,46 @@
-# 🧑‍💻 Nix Config
+# Nix Config
 
-My [Nix](https://nixos.org/) configuration for macOS, managed with flakes and [nix-darwin](https://github.com/LnL7/nix-darwin).
+Nix flake-based macOS configuration using [nix-darwin](https://github.com/LnL7/nix-darwin) and [home-manager](https://github.com/nix-community/home-manager). Supports separate `personal` and `work` configurations.
 
----
-
-## ✨ Features
-
-- 🚀 Automated setup of macOS devices.
-- 🔐 Separate work / personal configurations.
-
----
-
-# 📦 Prerequisites
-
-1. Clone this repository:
-   ```shell
-   git clone https://github.com/BenSuskins/nixos-config.git
-   cd nixos-config
-   ```
-2. **Install Nix and prerequisites:**  
-   Run the provided bootstrap script:
-   ```shell
-   ./bootstrap.sh
-   ```
-3. Follow the usage instructions below.
-
----
-
-## 💻 General Usage
+## Setup
 
 ```shell
-# 🔄 Update Flakes
+git clone https://github.com/BenSuskins/nixos-config.git
+cd nixos-config
+./bootstrap.sh
+```
+
+## Usage
+
+```shell
+# First-time setup
+nix run nix-darwin -- switch --flake .#personal  # or .#work
+
+# Build and apply changes
+sudo darwin-rebuild switch --flake .#personal    # or .#work
+
+# Build only (validate without applying)
+sudo darwin-rebuild build --flake .#personal     # or .#work
+
+# Rollback
+sudo darwin-rebuild rollback
+
+# Update flake inputs
 nix flake update
-
-# 🔍 See difference in build
-nix store diff-closures /run/current-system ./result
 ```
 
----
+## Troubleshooting
 
-## 🏡 Personal Mac
+**`Could not write domain com.apple.universalaccess`**
+Grant Full Disk Access to your terminal application.
 
-```shell
-# 🏗️ First time setup (before darwin-rebuild is available)
-nix run nix-darwin -- switch --flake .#personal
-
-# 🔨 Build system (after initial setup)
-sudo darwin-rebuild build --flake .#personal
-
-# 🚀 Deploy system (after initial setup)
-sudo darwin-rebuild switch --flake .#personal
-
-# ⏪ Rollback system
-sudo darwin-rebuild rollback
-```
-
-## 💼 Work Mac 
-
-```shell
-# 🏗️ First time setup (before darwin-rebuild is available)
-nix run nix-darwin -- switch --flake .#work
-
-# 🔨 Build system (after initial setup)
-sudo darwin-rebuild build --flake .#work
-
-# 🚀 Deploy system (after initial setup)
-sudo darwin-rebuild switch --flake .#work
-
-# ⏪ Rollback system
-sudo darwin-rebuild rollback
-```
----
-
-## 🛠️ Troubleshooting
-
-- `Could not write domain com.apple.universalaccess; exiting`
-  > ⚠️ Make sure you give **Full Disk Access** to the terminal you're using.
-
----
-
-## 🙏 Acknowledgments
-
-Based on [dustinlyons/nixos-config](https://github.com/dustinlyons/nixos-config). Thanks for the inspiration!
-
----
-
-## 💼 Resources
+## Resources
 
 - [Nix Manual](https://nixos.org/manual/nix/stable/)
-- [Nix Flakes](https://nixos.wiki/wiki/Flakes)
-- [Nix Pkgs Search](https://search.nixos.org/packages)
+- [Nix Packages Search](https://search.nixos.org/packages)
 - [Home Manager Options](https://home-manager-options.extranix.com)
-- [Nix Darwin Options](https://nix-darwin.github.io/nix-darwin/manual/)
+- [nix-darwin Options](https://nix-darwin.github.io/nix-darwin/manual/)
+
+## Acknowledgments
+
+Based on [dustinlyons/nixos-config](https://github.com/dustinlyons/nixos-config).
