@@ -9,6 +9,7 @@ with pkgs;
   jq
   dockutil
   eza
+  bat
 
   # Go
   go

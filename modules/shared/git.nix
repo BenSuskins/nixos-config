@@ -5,16 +5,53 @@
   ignores = [ "*.swp" ".envrc" ];
   settings ={
       alias = {
+        # Status & Info
         st = "status";
+        ss = "status -s";
         di = "diff";
-        co = "checkout";
-        ci = "commit";
-        br = "branch";
-        sta = "stash";
-        ds = "diff";
-        unstage = "reset";
-        rum = "rebase master@{u}";
+        dc = "diff --cached";
         lg = "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit";
+        lo = "log --oneline -20";
+        last = "log -1 HEAD --stat";
+
+        # Branching
+        br = "branch";
+        bra = "branch -a";
+        co = "checkout";
+        cob = "checkout -b";
+        sw = "switch";
+        swc = "switch -c";
+
+        # Committing
+        ci = "commit";
+        cia = "commit --amend";
+        cian = "commit --amend --no-edit";
+
+        # Staging
+        aa = "add --all";
+        ap = "add -p";
+        unstage = "reset HEAD --";
+
+        # Stashing
+        sta = "stash";
+        stap = "stash pop";
+        stal = "stash list";
+
+        # Remote
+        pu = "push";
+        puf = "push --force-with-lease";
+        pl = "pull";
+        fe = "fetch --all --prune";
+
+        # Rebase
+        rb = "rebase";
+        rbi = "rebase -i";
+        rba = "rebase --abort";
+        rbc = "rebase --continue";
+        rum = "rebase main@{u}";
+
+        # Cleanup
+        gone = "!git fetch -p && git branch -vv | grep ': gone]' | awk '{print $1}' | xargs -r git branch -D";
       };
       user = {
         name = name;

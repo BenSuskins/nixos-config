@@ -4,10 +4,21 @@
   # General
   l = "eza -lah";
   ls = "eza";
-  tree= "eza --tree --git-ignore";
+  tree = "eza --tree --git-ignore";
+  cat = "bat";
+
+  # Navigation
+  ".." = "cd ..";
+  "..." = "cd ../..";
+  "...." = "cd ../../..";
 
   # Shortcuts
   g = "lazygit";
+
+  # Utility
+  copy = "pbcopy";
+  paste = "pbpaste";
+  ports = "lsof -i -P -n | grep LISTEN";
 
   # Nix
   nixconfig = "code ~/workspace/nixos-config";
