@@ -2,29 +2,29 @@
   description = "Configuration for MacOS";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs.url = "git+ssh://git@github.com/nixos/nixpkgs?ref=nixos-unstable";
     home-manager = {
-      url = "github:nix-community/home-manager";
+      url = "git+ssh://git@github.com/nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    mac-app-util.url = "github:hraban/mac-app-util";
+    mac-app-util.url = "git+ssh://git@github.com/hraban/mac-app-util";
     darwin = {
-      url = "github:nix-darwin/nix-darwin/master";
+      url = "git+ssh://git@github.com/nix-darwin/nix-darwin?ref=master";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nix-homebrew = {
-      url = "github:zhaofengli/nix-homebrew";
+      url = "git+ssh://git@github.com/zhaofengli/nix-homebrew";
     };
     homebrew-bundle = {
-      url = "github:homebrew/homebrew-bundle";
+      url = "git+ssh://git@github.com/homebrew/homebrew-bundle";
       flake = false;
     };
     homebrew-core = {
-      url = "github:homebrew/homebrew-core";
+      url = "git+ssh://git@github.com/homebrew/homebrew-core";
       flake = false;
     };
     homebrew-cask = {
-      url = "github:homebrew/homebrew-cask";
+      url = "git+ssh://git@github.com/homebrew/homebrew-cask";
       flake = false;
     };
   };
