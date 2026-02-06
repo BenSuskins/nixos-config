@@ -28,7 +28,7 @@ with pkgs;
   podman-desktop
   
   # Nix
-  nixfmt-rfc-style
+  nixfmt
   
   # Git
   gh
