@@ -188,3 +188,52 @@ help() {
   echo -e "  ${GREEN}nixRun <pkg>${RESET}     ${DIM}run nix package${RESET}"
   echo -e "  ${GREEN}dgrep <pattern>${RESET}  ${DIM}recursive case-insensitive grep${RESET}"
 }
+
+keys() {
+  local reset="\033[0m"
+  local bold="\033[1m"
+  local dim="\033[2m"
+  local cyan="\033[38;5;81m"
+  local yellow="\033[38;5;228m"
+  local magenta="\033[38;5;213m"
+  local green="\033[38;5;120m"
+  local gray="\033[38;5;240m"
+
+  _key_row() {
+    printf "  ${yellow}%-28s${reset} ${dim}│${reset} ${cyan}%s${reset}\n" "$1" "$2"
+  }
+
+  _section() {
+    printf "\n  ${magenta}${bold}$1${reset}\n"
+    printf "  ${gray}%s${reset}\n" "$(printf '─%.0s' {1..48})"
+  }
+
+  printf "\n  ${bold}${green}󰥻  Ghostty Keybinds${reset}\n"
+  printf "  ${gray}%s${reset}\n" "$(printf '═%.0s' {1..48})"
+
+  _section "Splits"
+  _key_row "cmd + d"              "New split → right"
+  _key_row "cmd + shift + d"      "New split ↓ down"
+  _key_row "cmd + w"              "Close split"
+  _key_row "cmd + shift + enter"  "Toggle zoom focused split"
+
+  _section "Navigate Splits"
+  _key_row "cmd + alt + ←/→/↑/↓" "Move between splits"
+
+  _section "Resize Splits"
+  _key_row "cmd + ctrl + ←/→/↑/↓" "Resize split (20px)"
+  _key_row "cmd + ctrl + ="        "Equalize all splits"
+
+  _section "Tabs"
+  _key_row "cmd + t"              "New tab"
+  _key_row "cmd + shift + ←/→"   "Previous / next tab"
+  _key_row "cmd + 1–5"            "Jump to tab by number"
+
+  _section "Font Size"
+  _key_row "cmd + ="              "Increase font size"
+  _key_row "cmd + -"              "Decrease font size"
+  _key_row "cmd + 0"              "Reset font size"
+
+  printf "\n"
+}
+
