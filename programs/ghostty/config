@@ -69,3 +69,6 @@ keybind = cmd+shift+enter=toggle_split_zoom
 keybind = cmd+equal=increase_font_size:1
 keybind = cmd+minus=decrease_font_size:1
 keybind = cmd+0=reset_font_size
+
+# Clear screen
+keybind = cmd+k=clear_screen
