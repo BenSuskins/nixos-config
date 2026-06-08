@@ -10,6 +10,9 @@ shared-packages
   ansible
   ansible-lint
 
+  # Terraform
+  terraform
+
   # Communication Tools
   discord
 
