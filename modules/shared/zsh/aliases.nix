@@ -33,4 +33,5 @@
   sshgame = "ssh -i ~/.ssh/homelab gameserver@$GAME_SERVER_IP";
   sshmonitor = "ssh -i ~/.ssh/homelab monitor@$MONITOR_SERVER_IP";
   sshdevelopment = "ssh -i ~/.ssh/homelab development@$DEVELOPMENT_SERVER_IP";
+  sshbumblebee = "ssh -i ~/.ssh/homelab bumblebee@$BUMBLEBEE_SERVER_IP";
 }
